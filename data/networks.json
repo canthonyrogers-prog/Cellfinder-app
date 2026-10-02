@@ -1,0 +1,169 @@
+{
+ "updated": "SAMPLE-DATA",
+ "note": "Placeholder values for UI testing (SIM and roaming). Replace using the refresh pipeline in README.md.",
+ "destinations": [
+  {
+   "city": "Paris",
+   "country": "France",
+   "networks": [
+    {
+     "name": "Orange",
+     "priceUSD": 22,
+     "coverage": 94,
+     "plan": "tourist eSIM/SIM, ~30 days"
+    },
+    {
+     "name": "SFR",
+     "priceUSD": 15,
+     "coverage": 88,
+     "plan": "prepaid SIM, ~30 days"
+    },
+    {
+     "name": "Bouygues",
+     "priceUSD": 17,
+     "coverage": 90,
+     "plan": "prepaid SIM, ~30 days"
+    },
+    {
+     "name": "Free",
+     "priceUSD": 10,
+     "coverage": 82,
+     "plan": "prepaid SIM, ~30 days"
+    }
+   ]
+  },
+  {
+   "city": "Tokyo",
+   "country": "Japan",
+   "networks": [
+    {
+     "name": "NTT Docomo",
+     "priceUSD": 30,
+     "coverage": 97,
+     "plan": "visitor SIM, ~15 days"
+    },
+    {
+     "name": "au (KDDI)",
+     "priceUSD": 26,
+     "coverage": 94,
+     "plan": "visitor SIM, ~15 days"
+    },
+    {
+     "name": "SoftBank",
+     "priceUSD": 20,
+     "coverage": 91,
+     "plan": "visitor SIM, ~15 days"
+    },
+    {
+     "name": "Rakuten",
+     "priceUSD": 14,
+     "coverage": 84,
+     "plan": "visitor eSIM, ~15 days"
+    }
+   ]
+  },
+  {
+   "city": "Georgetown",
+   "country": "Guyana",
+   "networks": [
+    {
+     "name": "Digicel",
+     "priceUSD": 12,
+     "coverage": 90,
+     "plan": "prepaid SIM, ~30 days"
+    },
+    {
+     "name": "GTT",
+     "priceUSD": 10,
+     "coverage": 84,
+     "plan": "prepaid SIM, ~30 days"
+    }
+   ]
+  },
+  {
+   "city": "Punta Cana",
+   "country": "Dominican Republic",
+   "networks": [
+    {
+     "name": "Claro",
+     "priceUSD": 15,
+     "coverage": 93,
+     "plan": "prepaid SIM, ~30 days"
+    },
+    {
+     "name": "Altice",
+     "priceUSD": 13,
+     "coverage": 88,
+     "plan": "prepaid SIM, ~30 days"
+    },
+    {
+     "name": "Viva",
+     "priceUSD": 9,
+     "coverage": 74,
+     "plan": "prepaid SIM, ~30 days"
+    }
+   ]
+  }
+ ],
+ "homeCarriers": [
+  "T-Mobile US",
+  "Verizon",
+  "AT&T"
+ ],
+ "roaming": {
+  "T-Mobile US": {
+   "France": {
+    "dailyPassUSD": 5,
+    "partner": "Orange"
+   },
+   "Japan": {
+    "dailyPassUSD": 5,
+    "partner": "NTT Docomo"
+   },
+   "Guyana": {
+    "dailyPassUSD": null,
+    "partner": null
+   },
+   "Dominican Republic": {
+    "dailyPassUSD": 5,
+    "partner": "Claro"
+   }
+  },
+  "Verizon": {
+   "France": {
+    "dailyPassUSD": 12,
+    "partner": "Orange"
+   },
+   "Japan": {
+    "dailyPassUSD": 12,
+    "partner": "SoftBank"
+   },
+   "Guyana": {
+    "dailyPassUSD": 12,
+    "partner": "Digicel"
+   },
+   "Dominican Republic": {
+    "dailyPassUSD": 12,
+    "partner": "Claro"
+   }
+  },
+  "AT&T": {
+   "France": {
+    "dailyPassUSD": 10,
+    "partner": "SFR"
+   },
+   "Japan": {
+    "dailyPassUSD": 10,
+    "partner": "au (KDDI)"
+   },
+   "Guyana": {
+    "dailyPassUSD": 10,
+    "partner": "Digicel"
+   },
+   "Dominican Republic": {
+    "dailyPassUSD": 10,
+    "partner": "Altice"
+   }
+  }
+ }
+}

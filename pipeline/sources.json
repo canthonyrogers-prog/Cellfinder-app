@@ -1,0 +1,15 @@
+{
+  "_help": "One entry per city. For each network give a price source and a coverage source: url, selector (CSS), optional currency (default USD) and multiply (e.g. 10 to turn a 0-10 score into 0-100). Any url containing TODO is skipped. Check each site's terms and robots.txt before adding it.",
+  "destinations": [
+    {
+      "city": "Paris", "country": "France",
+      "networks": [
+        {
+          "name": "Orange", "plan": "tourist SIM, ~30 days",
+          "price": { "url": "TODO", "selector": "TODO", "currency": "EUR" },
+          "coverage": { "url": "TODO", "selector": "TODO" }
+        }
+      ]
+    }
+  ]
+}

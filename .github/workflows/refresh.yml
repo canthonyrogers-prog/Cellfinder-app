@@ -1,0 +1,27 @@
+name: Refresh data
+on:
+  schedule:
+    - cron: '0 6 1 * *'   # 1st of each month, 06:00 UTC
+  workflow_dispatch:       # lets you run it by hand from the Actions tab
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm install
+        working-directory: pipeline
+      - run: node refresh.mjs
+        working-directory: pipeline
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: refresh-report, path: pipeline/report.txt }
+      - name: Commit updated data
+        run: |
+          git config user.name "refresh-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/networks.json
+          if ! git diff --staged --quiet; then git commit -m "Monthly data refresh" && git push; fi

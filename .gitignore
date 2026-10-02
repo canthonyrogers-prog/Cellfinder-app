@@ -1,0 +1,6 @@
+node_modules
+.expo
+dist
+pipeline/report.txt
+*.zip
+*.exe

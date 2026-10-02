@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Cell Finder",
+    "slug": "cell-finder",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.cellfinder"
+    },
+    "android": {
+      "package": "com.example.cellfinder"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
+  }
+}
