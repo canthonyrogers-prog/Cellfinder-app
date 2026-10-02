@@ -1,5 +1,5 @@
 {
- "updated": "SAMPLE-DATA",
+ "updated": "2026-10-02",
  "note": "Placeholder values for UI testing (SIM and roaming). Replace using the refresh pipeline in README.md.",
  "destinations": [
   {
@@ -10,7 +10,7 @@
      "name": "Orange",
      "priceUSD": 22,
      "coverage": 94,
-     "plan": "tourist eSIM/SIM, ~30 days"
+     "plan": "tourist SIM, ~30 days"
     },
     {
      "name": "SFR",
