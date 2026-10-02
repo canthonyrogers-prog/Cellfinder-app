@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import bundled from './data/networks.json';
 
 // Host the refreshed JSON (e.g. GitHub Pages / S3) and put its URL here.
-const DATA_URL = '';
+const DATA_URL = 'https://raw.githubusercontent.com/canthonyrogers-prog/Cellfinder-app/main/data/networks.json';
 const C = { navy: '#0B2A5B', blue: '#1F6FEB', sky: '#EAF2FF', yellow: '#FFC72C', ink: '#0F1B33', mute: '#5B6B88', white: '#FFFFFF' };
 
 const norm = (s) => s.trim().toLowerCase();
