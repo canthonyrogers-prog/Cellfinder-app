@@ -1,14 +1,13 @@
 {
-  "_help": "One entry per city. For each network give a price source and a coverage source: url, selector (CSS), optional currency (default USD) and multiply (e.g. 10 to turn a 0-10 score into 0-100). Any url containing TODO is skipped. Check each site's terms and robots.txt before adding it.",
+  "_help": "Per network, price and coverage can each be: (1) a manual value: { value, currency, source: official URL or report, asOf: YYYY-MM-DD }; (2) a scraped value: { url, selector, currency, multiply }; or (3) { todo: 'note' } to skip. Manual prices go stale after 120 days and coverage after 450; the job logs STALE. Only enter numbers you verified on the official page or published report. Check each site's terms and robots.txt before scraping.",
   "destinations": [
     {
       "city": "Paris", "country": "France",
       "networks": [
-        {
-          "name": "Orange", "plan": "tourist SIM, ~30 days",
-          "price": { "url": "TODO", "selector": "TODO", "currency": "EUR" },
-          "coverage": { "url": "TODO", "selector": "TODO" }
-        }
+        { "name": "Orange", "plan": "tourist SIM", "price": { "todo": "verify Orange Holiday price on official page" }, "coverage": { "todo": "ARCEP report" } },
+        { "name": "SFR", "plan": "prepaid SIM", "price": { "todo": "verify on sfr.fr" }, "coverage": { "todo": "ARCEP report" } },
+        { "name": "Bouygues", "plan": "prepaid SIM", "price": { "todo": "verify on bouyguestelecom.fr" }, "coverage": { "todo": "ARCEP report" } },
+        { "name": "Free", "plan": "prepaid SIM", "price": { "todo": "verify on mobile.free.fr" }, "coverage": { "todo": "ARCEP report" } }
       ]
     }
   ]

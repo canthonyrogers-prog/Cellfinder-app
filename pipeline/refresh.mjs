@@ -43,7 +43,22 @@ for (const src of sources) {
     if (n.plan) net.plan = n.plan;
     for (const [field, cfg] of [['priceUSD', n.price], ['coverage', n.coverage]]) {
       const label = `${src.city} / ${n.name} / ${field}`;
-      if (!cfg || String(cfg.url).includes('TODO')) { log.push('SKIP ' + label + ' (not configured)'); continue; }
+      if (cfg && cfg.value !== undefined) { // researched value entered by hand, with its source
+        tried++;
+        try {
+          const v = field === 'priceUSD' ? Math.round((await toUSD(cfg.value, cfg.currency)) * 100) / 100 : cfg.value;
+          const [lo, hi] = field === 'priceUSD' ? [1, 300] : [0, 100];
+          if (!(v >= lo && v <= hi)) throw new Error('value out of range: ' + v);
+          if (!cfg.source || !cfg.asOf) throw new Error('manual value needs source and asOf');
+          const age = (Date.now() - new Date(cfg.asOf)) / 864e5;
+          if (age > (field === 'priceUSD' ? 120 : 450)) log.push('STALE ' + label + ' (asOf ' + cfg.asOf + ')');
+          net[field] = v; delete net.stale;
+          net.sources = { ...net.sources, [field]: { url: cfg.source, asOf: cfg.asOf } };
+          log.push('OK   ' + label + ' = ' + v + ' (manual)');
+        } catch (e) { failed++; net.stale = true; log.push('FAIL ' + label + ': ' + e.message); }
+        continue;
+      }
+      if (!cfg || cfg.todo || String(cfg.url).includes('TODO')) { log.push('SKIP ' + label + ' (not configured)'); continue; }
       tried++;
       try {
         let v = await grab(cfg);
