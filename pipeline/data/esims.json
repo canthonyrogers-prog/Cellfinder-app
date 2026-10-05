@@ -1,0 +1,78 @@
+{
+ "updated": "2026-10-03",
+ "via": "eSIMDB",
+ "viaUrl": "https://esimdb.com",
+ "note": "Advertised travel-eSIM prices from a comparison site; reseller eSIMs, not networks. Verify at checkout.",
+ "countries": {
+  "Dominican Republic": {
+   "provider": "Sim Local",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 17,
+   "asOf": "2026-10-03"
+  },
+  "Jamaica": {
+   "provider": "GlobaleSIM",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 32,
+   "asOf": "2026-10-03"
+  },
+  "Trinidad & Tobago": {
+   "provider": "Ubigi",
+   "gb": 10,
+   "days": 7,
+   "priceUSD": 28,
+   "asOf": "2026-10-03"
+  },
+  "Guyana": {
+   "provider": "GlobaleSIM",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 26.4,
+   "asOf": "2026-10-03"
+  },
+  "Barbados": {
+   "provider": "GlobaleSIM",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 20.8,
+   "asOf": "2026-10-03"
+  },
+  "Bahamas": {
+   "provider": "Ubigi",
+   "gb": 10,
+   "days": 7,
+   "priceUSD": 28,
+   "asOf": "2026-10-03"
+  },
+  "Mexico": {
+   "provider": "Breeze",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 14.99,
+   "asOf": "2026-10-03"
+  },
+  "Colombia": {
+   "provider": "GoMoWorld",
+   "gb": 15,
+   "days": 30,
+   "priceUSD": 12.99,
+   "asOf": "2026-10-03"
+  },
+  "Costa Rica": {
+   "provider": "Breeze",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 15.99,
+   "asOf": "2026-10-03"
+  },
+  "Panama": {
+   "provider": "GoMoWorld",
+   "gb": 15,
+   "days": 30,
+   "priceUSD": 12.99,
+   "asOf": "2026-10-03"
+  }
+ }
+}

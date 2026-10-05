@@ -1,0 +1,341 @@
+{
+ "_help": "Travel-eSIM plans from your spreadsheet. Add or edit rows, then run the job. type is Country or Regional (Regional rows are kept but not shown yet). Prices are advertised examples; verify at checkout.",
+ "via": "eSIMDB",
+ "viaUrl": "https://esimdb.com",
+ "checkedOn": "2026-10-03",
+ "plans": [
+  {
+   "country": "Dominican Republic",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 7,
+   "priceUSD": 18,
+   "provider": "Ubigi",
+   "type": "Country"
+  },
+  {
+   "country": "Dominican Republic",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 17,
+   "provider": "Sim Local",
+   "type": "Country"
+  },
+  {
+   "country": "Dominican Republic",
+   "region": "Caribbean",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 26.99,
+   "provider": "EtravelSIM",
+   "type": "Country"
+  },
+  {
+   "country": "Dominican Republic",
+   "region": "Caribbean",
+   "gb": 15.0,
+   "days": 30,
+   "priceUSD": 35.99,
+   "provider": "Orange Travel",
+   "type": "Country"
+  },
+  {
+   "country": "Jamaica",
+   "region": "Caribbean",
+   "gb": 5.0,
+   "days": 30,
+   "priceUSD": 19,
+   "provider": "Nomad",
+   "type": "Country"
+  },
+  {
+   "country": "Jamaica",
+   "region": "Caribbean",
+   "gb": 5.0,
+   "days": 30,
+   "priceUSD": 21,
+   "provider": "Jetpac",
+   "type": "Country"
+  },
+  {
+   "country": "Jamaica",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 32,
+   "provider": "GlobaleSIM",
+   "type": "Country"
+  },
+  {
+   "country": "Jamaica",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 15,
+   "priceUSD": 33.5,
+   "provider": "Airalo",
+   "type": "Country"
+  },
+  {
+   "country": "Trinidad & Tobago",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 7,
+   "priceUSD": 28,
+   "provider": "Ubigi",
+   "type": "Country"
+  },
+  {
+   "country": "Trinidad & Tobago",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 36,
+   "provider": "GlobaleSIM",
+   "type": "Country"
+  },
+  {
+   "country": "Trinidad & Tobago",
+   "region": "Caribbean",
+   "gb": 5.0,
+   "days": 30,
+   "priceUSD": 28.99,
+   "provider": "Breeze",
+   "type": "Country"
+  },
+  {
+   "country": "Guyana",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 26.4,
+   "provider": "GlobaleSIM",
+   "type": "Country"
+  },
+  {
+   "country": "Guyana",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 35,
+   "provider": "Nomad",
+   "type": "Country"
+  },
+  {
+   "country": "Guyana",
+   "region": "Caribbean",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 45,
+   "provider": "Nomad",
+   "type": "Country"
+  },
+  {
+   "country": "Barbados",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 20.8,
+   "provider": "GlobaleSIM",
+   "type": "Country"
+  },
+  {
+   "country": "Barbados",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 32,
+   "provider": "Nomad",
+   "type": "Country"
+  },
+  {
+   "country": "Bahamas",
+   "region": "Caribbean",
+   "gb": 5.0,
+   "days": 30,
+   "priceUSD": 19,
+   "provider": "Nomad",
+   "type": "Country"
+  },
+  {
+   "country": "Bahamas",
+   "region": "Caribbean",
+   "gb": 5.0,
+   "days": 30,
+   "priceUSD": 21,
+   "provider": "Jetpac",
+   "type": "Country"
+  },
+  {
+   "country": "Bahamas",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 7,
+   "priceUSD": 28,
+   "provider": "Ubigi",
+   "type": "Country"
+  },
+  {
+   "country": "Caribbean Regional",
+   "region": "Caribbean",
+   "gb": 5.0,
+   "days": 30,
+   "priceUSD": 21,
+   "provider": "Nomad",
+   "type": "Regional"
+  },
+  {
+   "country": "Caribbean Regional",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 7,
+   "priceUSD": 28,
+   "provider": "Ubigi",
+   "type": "Regional"
+  },
+  {
+   "country": "Caribbean Regional",
+   "region": "Caribbean",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 36,
+   "provider": "Jetpac",
+   "type": "Regional"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 14.99,
+   "provider": "Breeze",
+   "type": "Country"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 15.5,
+   "provider": "Nomad",
+   "type": "Country"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 22.99,
+   "provider": "Orange Travel",
+   "type": "Country"
+  },
+  {
+   "country": "Colombia",
+   "region": "Latin America",
+   "gb": 15.0,
+   "days": 30,
+   "priceUSD": 12.99,
+   "provider": "GoMoWorld",
+   "type": "Country"
+  },
+  {
+   "country": "Colombia",
+   "region": "Latin America",
+   "gb": 5.0,
+   "days": 30,
+   "priceUSD": 13.25,
+   "provider": "Sim Local",
+   "type": "Country"
+  },
+  {
+   "country": "Colombia",
+   "region": "Latin America",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 27,
+   "provider": "EtravelSIM",
+   "type": "Country"
+  },
+  {
+   "country": "Costa Rica",
+   "region": "Latin America",
+   "gb": 10.0,
+   "days": 30,
+   "priceUSD": 15.99,
+   "provider": "Breeze",
+   "type": "Country"
+  },
+  {
+   "country": "Costa Rica",
+   "region": "Latin America",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 27,
+   "provider": "EtravelSIM",
+   "type": "Country"
+  },
+  {
+   "country": "Costa Rica",
+   "region": "Latin America",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 35.99,
+   "provider": "Orange Travel",
+   "type": "Country"
+  },
+  {
+   "country": "Panama",
+   "region": "Latin America",
+   "gb": 15.0,
+   "days": 30,
+   "priceUSD": 12.99,
+   "provider": "GoMoWorld",
+   "type": "Country"
+  },
+  {
+   "country": "Panama",
+   "region": "Latin America",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 27,
+   "provider": "Nomad",
+   "type": "Country"
+  },
+  {
+   "country": "Panama",
+   "region": "Latin America",
+   "gb": 10.0,
+   "days": 7,
+   "priceUSD": 19,
+   "provider": "Ubigi",
+   "type": "Country"
+  },
+  {
+   "country": "Latin America Regional",
+   "region": "Latin America",
+   "gb": 12.0,
+   "days": 30,
+   "priceUSD": 19.75,
+   "provider": "Sim Local",
+   "type": "Regional"
+  },
+  {
+   "country": "Latin America Regional",
+   "region": "Latin America",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 27,
+   "provider": "EtravelSIM",
+   "type": "Regional"
+  },
+  {
+   "country": "Latin America Regional",
+   "region": "Latin America",
+   "gb": 20.0,
+   "days": 30,
+   "priceUSD": 35.99,
+   "provider": "Orange Travel",
+   "type": "Regional"
+  }
+ ]
+}
