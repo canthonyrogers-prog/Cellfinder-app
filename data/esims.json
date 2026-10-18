@@ -2,76 +2,257 @@
  "updated": "2026-10-05",
  "via": "eSIMDB",
  "viaUrl": "https://esimdb.com",
+ "minGB": 3,
  "note": "Advertised travel-eSIM prices from a comparison site; reseller eSIMs, not networks. Verify at checkout.",
  "countries": {
   "Dominican Republic": {
-   "provider": "Sim Local",
-   "gb": 10,
-   "days": 30,
-   "priceUSD": 17,
+   "cheapest": {
+    "provider": "Sim Local",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 17,
+    "perGB": 1.7
+   },
+   "value": {
+    "provider": "EtravelSIM",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 26.99,
+    "perGB": 1.35
+   },
+   "mostData": {
+    "provider": "EtravelSIM",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 26.99,
+    "perGB": 1.35
+   },
+   "planCount": 4,
    "asOf": "2026-10-03"
   },
   "Jamaica": {
-   "provider": "GlobaleSIM",
-   "gb": 10,
-   "days": 30,
-   "priceUSD": 32,
+   "cheapest": {
+    "provider": "Nomad",
+    "gb": 5,
+    "days": 30,
+    "priceUSD": 19,
+    "perGB": 3.8
+   },
+   "value": {
+    "provider": "GlobaleSIM",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 32,
+    "perGB": 3.2
+   },
+   "mostData": {
+    "provider": "GlobaleSIM",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 32,
+    "perGB": 3.2
+   },
+   "planCount": 4,
    "asOf": "2026-10-03"
   },
   "Trinidad & Tobago": {
-   "provider": "Ubigi",
-   "gb": 10,
-   "days": 7,
-   "priceUSD": 28,
+   "cheapest": {
+    "provider": "Ubigi",
+    "gb": 10,
+    "days": 7,
+    "priceUSD": 28,
+    "perGB": 2.8
+   },
+   "value": {
+    "provider": "Ubigi",
+    "gb": 10,
+    "days": 7,
+    "priceUSD": 28,
+    "perGB": 2.8
+   },
+   "mostData": {
+    "provider": "Ubigi",
+    "gb": 10,
+    "days": 7,
+    "priceUSD": 28,
+    "perGB": 2.8
+   },
+   "planCount": 3,
    "asOf": "2026-10-03"
   },
   "Guyana": {
-   "provider": "GlobaleSIM",
-   "gb": 10,
-   "days": 30,
-   "priceUSD": 26.4,
+   "cheapest": {
+    "provider": "GlobaleSIM",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 26.4,
+    "perGB": 2.64
+   },
+   "value": {
+    "provider": "Nomad",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 45,
+    "perGB": 2.25
+   },
+   "mostData": {
+    "provider": "Nomad",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 45,
+    "perGB": 2.25
+   },
+   "planCount": 3,
    "asOf": "2026-10-03"
   },
   "Barbados": {
-   "provider": "GlobaleSIM",
-   "gb": 10,
-   "days": 30,
-   "priceUSD": 20.8,
+   "cheapest": {
+    "provider": "GlobaleSIM",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 20.8,
+    "perGB": 2.08
+   },
+   "value": {
+    "provider": "GlobaleSIM",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 20.8,
+    "perGB": 2.08
+   },
+   "mostData": {
+    "provider": "GlobaleSIM",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 20.8,
+    "perGB": 2.08
+   },
+   "planCount": 2,
    "asOf": "2026-10-03"
   },
   "Bahamas": {
-   "provider": "Ubigi",
-   "gb": 10,
-   "days": 7,
-   "priceUSD": 28,
+   "cheapest": {
+    "provider": "Nomad",
+    "gb": 5,
+    "days": 30,
+    "priceUSD": 19,
+    "perGB": 3.8
+   },
+   "value": {
+    "provider": "Ubigi",
+    "gb": 10,
+    "days": 7,
+    "priceUSD": 28,
+    "perGB": 2.8
+   },
+   "mostData": {
+    "provider": "Ubigi",
+    "gb": 10,
+    "days": 7,
+    "priceUSD": 28,
+    "perGB": 2.8
+   },
+   "planCount": 3,
    "asOf": "2026-10-03"
   },
   "Mexico": {
-   "provider": "Breeze",
-   "gb": 10,
-   "days": 30,
-   "priceUSD": 14.99,
+   "cheapest": {
+    "provider": "Breeze",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 14.99,
+    "perGB": 1.5
+   },
+   "value": {
+    "provider": "Orange Travel",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 22.99,
+    "perGB": 1.15
+   },
+   "mostData": {
+    "provider": "Orange Travel",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 22.99,
+    "perGB": 1.15
+   },
+   "planCount": 3,
    "asOf": "2026-10-03"
   },
   "Colombia": {
-   "provider": "GoMoWorld",
-   "gb": 15,
-   "days": 30,
-   "priceUSD": 12.99,
+   "cheapest": {
+    "provider": "GoMoWorld",
+    "gb": 15,
+    "days": 30,
+    "priceUSD": 12.99,
+    "perGB": 0.87
+   },
+   "value": {
+    "provider": "GoMoWorld",
+    "gb": 15,
+    "days": 30,
+    "priceUSD": 12.99,
+    "perGB": 0.87
+   },
+   "mostData": {
+    "provider": "EtravelSIM",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 27,
+    "perGB": 1.35
+   },
+   "planCount": 3,
    "asOf": "2026-10-03"
   },
   "Costa Rica": {
-   "provider": "Breeze",
-   "gb": 10,
-   "days": 30,
-   "priceUSD": 15.99,
+   "cheapest": {
+    "provider": "Breeze",
+    "gb": 10,
+    "days": 30,
+    "priceUSD": 15.99,
+    "perGB": 1.6
+   },
+   "value": {
+    "provider": "EtravelSIM",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 27,
+    "perGB": 1.35
+   },
+   "mostData": {
+    "provider": "EtravelSIM",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 27,
+    "perGB": 1.35
+   },
+   "planCount": 3,
    "asOf": "2026-10-03"
   },
   "Panama": {
-   "provider": "GoMoWorld",
-   "gb": 15,
-   "days": 30,
-   "priceUSD": 12.99,
+   "cheapest": {
+    "provider": "GoMoWorld",
+    "gb": 15,
+    "days": 30,
+    "priceUSD": 12.99,
+    "perGB": 0.87
+   },
+   "value": {
+    "provider": "GoMoWorld",
+    "gb": 15,
+    "days": 30,
+    "priceUSD": 12.99,
+    "perGB": 0.87
+   },
+   "mostData": {
+    "provider": "Nomad",
+    "gb": 20,
+    "days": 30,
+    "priceUSD": 27,
+    "perGB": 1.35
+   },
+   "planCount": 3,
    "asOf": "2026-10-03"
   }
  }

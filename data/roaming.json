@@ -1,0 +1,10 @@
+{
+  "updated": "2026-10-05",
+  "note": "Roaming rates are added only after they are checked against the carrier's own page. Empty until then.",
+  "carriers": [
+    { "id": "verizon", "name": "Verizon", "group": "Verizon" },
+    { "id": "att", "name": "AT&T", "group": "AT&T" },
+    { "id": "tmobile", "name": "T-Mobile", "group": "T-Mobile" }
+  ],
+  "rules": {}
+}
