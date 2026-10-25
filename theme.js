@@ -86,5 +86,7 @@ export const makeStyles = (t) =>
     sectionLabel: { fontFamily: F.label, fontSize: 15, lineHeight: 20, color: t.muted, marginTop: 28, paddingBottom: 6 },
     row: { minHeight: 60, justifyContent: 'center', borderTopWidth: 1, borderTopColor: t.rule, paddingVertical: 8 },
     rowMain: { fontFamily: F.headMid, fontSize: 21, lineHeight: 24, color: t.strong },
+    rowLine: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' },
+    rowPrice: { fontFamily: F.head, fontSize: 22, lineHeight: 26, color: t.strong, marginLeft: 12 },
     rowSub: { fontFamily: F.body, fontSize: 15, lineHeight: 20, color: t.muted },
   });

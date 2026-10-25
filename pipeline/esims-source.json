@@ -203,33 +203,6 @@
    "type": "Regional"
   },
   {
-   "country": "Mexico",
-   "region": "Latin America",
-   "gb": 10.0,
-   "days": 30,
-   "priceUSD": 14.99,
-   "provider": "Breeze",
-   "type": "Country"
-  },
-  {
-   "country": "Mexico",
-   "region": "Latin America",
-   "gb": 10.0,
-   "days": 30,
-   "priceUSD": 15.5,
-   "provider": "Nomad",
-   "type": "Country"
-  },
-  {
-   "country": "Mexico",
-   "region": "Latin America",
-   "gb": 20.0,
-   "days": 30,
-   "priceUSD": 22.99,
-   "provider": "Orange Travel",
-   "type": "Country"
-  },
-  {
    "country": "Colombia",
    "region": "Latin America",
    "gb": 15.0,
@@ -336,6 +309,108 @@
    "priceUSD": 35.99,
    "provider": "Orange Travel",
    "type": "Regional"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "provider": "Breeze",
+   "plan": "10 GB",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 14.99,
+   "type": "Country",
+   "asOf": "2026-10-23",
+   "source": "https://esimdb.com/mexico"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "provider": "Nomad",
+   "plan": "Fixed 10 GB",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 15.5,
+   "type": "Country",
+   "asOf": "2026-10-23",
+   "source": "https://www.nomadesim.com/mexico-esim/",
+   "network": "AT&T / Movistar"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "provider": "Maya Mobile",
+   "plan": "City break, unlimited",
+   "gb": null,
+   "days": 7,
+   "priceUSD": 19.99,
+   "type": "Country",
+   "asOf": "2026-10-23",
+   "source": "https://maya.net/esim/mexico",
+   "unlimited": true
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "provider": "Ubigi",
+   "plan": "Mexico 10 GB",
+   "gb": 10,
+   "days": 7,
+   "priceUSD": 22.0,
+   "type": "Country",
+   "asOf": "2026-10-23",
+   "source": "https://cellulardata.ubigi.com/rates-and-coverage/mexico-data-plans/mexico-10gb-7-days/",
+   "network": "Altan, Movistar or Telcel"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "provider": "Airalo",
+   "plan": "10 GB",
+   "gb": 10,
+   "days": 7,
+   "priceUSD": 23.5,
+   "type": "Country",
+   "asOf": "2026-10-23",
+   "source": "https://www.airalo.com/mexico-esim",
+   "network": "Movistar"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "provider": "Saily",
+   "plan": "10 GB",
+   "gb": 10,
+   "days": 30,
+   "priceUSD": 23.99,
+   "type": "Country",
+   "asOf": "2026-10-23",
+   "source": "https://www.saily.com/esim-mexico/"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "provider": "Holafly",
+   "plan": "Unlimited",
+   "gb": null,
+   "days": 7,
+   "priceUSD": 24.5,
+   "type": "Country",
+   "asOf": "2026-10-23",
+   "source": "https://esim.holafly.com/esim-mexico/",
+   "unlimited": true,
+   "network": "Movistar / Telcel"
+  },
+  {
+   "country": "Mexico",
+   "region": "Latin America",
+   "provider": "Orange Travel",
+   "plan": "20 GB",
+   "gb": 20,
+   "days": 30,
+   "priceUSD": 22.99,
+   "type": "Country",
+   "asOf": "2026-10-23",
+   "source": "https://esimdb.com/mexico"
   }
  ]
 }

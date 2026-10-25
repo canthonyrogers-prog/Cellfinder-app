@@ -1,10 +1,35 @@
 {
-  "updated": "2026-10-05",
-  "note": "Roaming rates are added only after they are checked against the carrier's own page. Empty until then.",
-  "carriers": [
-    { "id": "verizon", "name": "Verizon", "group": "Verizon" },
-    { "id": "att", "name": "AT&T", "group": "AT&T" },
-    { "id": "tmobile", "name": "T-Mobile", "group": "T-Mobile" }
-  ],
-  "rules": {}
+  "updated": "2026-10-23",
+  "note": "US carrier roaming for the destination, from each carrier's own pages. Plan rules vary: confirm your plan with your carrier.",
+  "carriers": ["T-Mobile", "Verizon", "AT&T"],
+  "countries": {
+    "Mexico": {
+      "T-Mobile": {
+        "headline": "Included on most postpaid plans",
+        "detail": "Calls and texts are free in Mexico. High-speed data is included (5 to 30 GB depending on your plan), then slower speeds. Prepaid plans were not checked.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some plan limits, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans/results/mexico",
+        "asOf": "2026-10-23"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $6 a day in Mexico",
+        "detail": "5 GB of high-speed data per day, then slower speeds. You pay only for days you use your phone. Some Unlimited plans may include Mexico at no extra charge.",
+        "pass": "$6/day, 5 GB high-speed per day",
+        "perDayUSD": 6,
+        "caution": "Verizon's pages disagree on whether Mexico is free on Unlimited plans. Check My Verizon for your plan.",
+        "url": "https://www.verizon.com/plans/international/international-travel/travel-pass/",
+        "asOf": "2026-10-23"
+      },
+      "AT&T": {
+        "headline": "Included on domestic unlimited plans",
+        "detail": "Talk, text and data in Mexico are included on AT&T unlimited plans, but speeds may be slow. Other plans pay by day or by use.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it",
+        "perDayUSD": 12,
+        "caution": "I could not confirm the Mexico rules for every AT&T plan. Check your plan with AT&T.",
+        "url": "https://www.att.com/international/",
+        "asOf": "2026-10-23"
+      }
+    }
+  }
 }

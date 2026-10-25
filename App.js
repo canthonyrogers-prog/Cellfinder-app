@@ -4,73 +4,54 @@ import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFonts, Barlow_400Regular, Barlow_500Medium, Barlow_600SemiBold } from '@expo-google-fonts/barlow';
 import { BarlowSemiCondensed_600SemiBold, BarlowSemiCondensed_700Bold } from '@expo-google-fonts/barlow-semi-condensed';
+import bundled from './data/networks.json';
 import bundledEsims from './data/esims.json';
 import bundledRoaming from './data/roaming.json';
 import { normCountry } from './utils';
 import { THEMES, makeStyles } from './theme';
 
-// Where the refreshed JSON lives (GitHub). Roaming sits next to the eSIM file.
-const BASE = 'https://raw.githubusercontent.com/canthonyrogers-prog/Cellfinder-app/main/data/';
-const ESIM_URL = BASE + 'esims.json';
-const ROAM_URL = BASE + 'roaming.json';
-const TRIPS = [3, 7, 14, 30];
+// Host the refreshed JSON (GitHub) and put its URL here.
+const DATA_URL = 'https://raw.githubusercontent.com/canthonyrogers-prog/Cellfinder-app/main/data/networks.json';
+const ESIM_URL = DATA_URL ? DATA_URL.replace('networks.json', 'esims.json') : '';
+const ROAMING_URL = DATA_URL ? DATA_URL.replace('networks.json', 'roaming.json') : '';
 
-// Only accept data in the shape this version understands (an older file on GitHub must not crash the app).
-const goodPlan = (p) => p && typeof p.priceUSD === 'number' && typeof p.gb === 'number' && typeof p.days === 'number' && p.provider;
-function cleanEsims(x) {
-  if (!x || typeof x.countries !== 'object') return null;
-  const countries = {};
-  Object.entries(x.countries).forEach(([k, c]) => {
-    if (c && goodPlan(c.cheapest) && goodPlan(c.value) && goodPlan(c.mostData)) countries[k] = c;
-  });
-  return Object.keys(countries).length ? { ...x, countries } : null;
-}
-const cleanRoaming = (x) => (x && Array.isArray(x.carriers) ? { ...x, rules: x.rules || {} } : null);
-const money = (n) => {
-  const r = Math.round(n * 100) / 100;
-  return '$' + (Number.isInteger(r) ? String(r) : r.toFixed(2));
-};
+const norm = (s = '') => s.trim().toLowerCase();
 
-// The three eSIM options. If one plan wins several, it is shown once with several letters.
-function options(c) {
-  const defs = [['A', 'Cheapest', c.cheapest], ['B', 'Best value', c.value], ['C', 'Most data', c.mostData]];
-  const out = [];
-  defs.forEach(([tag, label, p]) => {
-    const key = `${p.provider}|${p.gb}|${p.days}|${p.priceUSD}`;
-    const hit = out.find((o) => o.key === key);
-    if (hit) { hit.tags.push(tag); hit.labels.push(label); } else out.push({ key, tags: [tag], labels: [label], p });
-  });
-  return out;
-}
-
-// What roaming would cost for a trip of `days` days, from a rule in roaming.json.
-function roamCost(rule, days) {
-  if (!rule) return null;
-  if (rule.kind === 'daily') {
-    const raw = rule.dailyUSD * days;
-    return { usd: rule.capUSD ? Math.min(raw, rule.capUSD) : raw };
+function rank(networks, hasCoverage) {
+  if (!hasCoverage) {
+    return { cheapest: [...networks].sort((a, b) => a.priceUSD - b.priceUSD)[0], coverageMissing: true };
   }
-  if (rule.kind === 'included') return { usd: 0 };
-  return { usd: null };
+  const minPrice = Math.min(...networks.map((n) => n.priceUSD));
+  const maxCov = Math.max(...networks.map((n) => n.coverage));
+  const score = (n) => 0.5 * (n.coverage / maxCov) + 0.5 * (minPrice / n.priceUSD);
+  return {
+    cheapest: [...networks].sort((a, b) => a.priceUSD - b.priceUSD)[0],
+    coverage: [...networks].sort((a, b) => b.coverage - a.coverage)[0],
+    balanced: [...networks].sort((a, b) => score(b) - score(a))[0],
+  };
 }
 
-function EsimCard({ s, o }) {
-  const p = o.p;
-  const wide = o.tags.length > 1;
+function Card({ s, label, tag, n }) {
   return (
     <View style={s.card}>
-      <View style={[s.badge, wide && { width: 'auto', minWidth: 52, paddingHorizontal: 10 }]}>
-        <Text style={[s.badgeText, wide && { fontSize: 26 }]}>{o.tags.join(' ')}</Text>
-      </View>
+      <View style={s.badge}><Text style={s.badgeText}>{tag}</Text></View>
       <View style={s.cardBody}>
-        <Text style={s.label}>{o.labels.join(' · ')}</Text>
-        <Text style={s.net}>{p.provider}</Text>
-        <Text style={s.plan}>{p.gb} GB · {p.days} days</Text>
+        <Text style={s.label}>{label}</Text>
+        <Text style={s.net}>{n.name}</Text>
+        <Text style={s.plan}>{n.plan}</Text>
       </View>
       <View style={s.priceCol}>
-        <Text style={s.price}>{money(p.priceUSD)}</Text>
-        <Text style={s.cov}>{money(p.perGB)}/GB</Text>
+        <Text style={s.price}>${n.priceUSD}</Text>
+        {typeof n.coverage === 'number' ? <Text style={s.cov}>Coverage {n.coverage}/100</Text> : null}
       </View>
+    </View>
+  );
+}
+
+function SimGlyph({ color }) {
+  return (
+    <View style={{ width: 22, height: 28, borderWidth: 2, borderColor: color, borderRadius: 4, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ width: 10, height: 10, borderWidth: 2, borderColor: color, borderRadius: 2 }} />
     </View>
   );
 }
@@ -85,32 +66,62 @@ function SignalGlyph({ color }) {
   );
 }
 
-function Roaming({ s, t, carrier, rule, days, cheapest }) {
-  const cost = roamCost(rule, days);
-  let title; let detail; let verdict = null;
-  if (!rule) {
-    title = 'Not listed yet';
-    detail = `We haven't confirmed ${carrier.name}'s roaming rate for this country. Check with your carrier before you go.`;
-  } else if (rule.kind === 'included') {
-    title = 'Included';
-    detail = rule.note || 'Roaming is included in this country on eligible plans.';
-  } else if (rule.kind === 'none') {
-    title = 'No roaming';
-    detail = rule.note || 'This carrier does not offer roaming here. An eSIM is your best option.';
-  } else {
-    title = `${money(cost.usd)} for ${days} days`;
-    detail = `${money(rule.dailyUSD)} per day${rule.capUSD ? `, capped at ${money(rule.capUSD)}` : ''}${rule.note ? '. ' + rule.note : ''}`;
-    verdict = cost.usd > cheapest.priceUSD ? `The cheapest eSIM is ${money(cheapest.priceUSD)}.` : `Roaming costs less than the cheapest eSIM (${money(cheapest.priceUSD)}).`;
-  }
+const money = (x) => `$${Number(x).toFixed(2)}`;
+const gbText = (p) => (p.unlimited ? 'Unlimited data' : `${p.gb} GB`);
+const netText = (p) => (p.network ? `Network: ${p.network}` : 'Network not stated');
+
+function EsimCard({ s, t, e, via }) {
+  const more = (e.plans || []).slice(1);
+  return (
+    <View>
+      <View style={s.outlineCard}>
+        <View style={s.iconBox}><SimGlyph color={t.accent} /></View>
+        <View style={s.cardBody}>
+          <Text style={s.label}>Cheapest travel eSIM</Text>
+          <View style={s.eRow}>
+            <Text style={s.net}>{e.provider}</Text>
+            <Text style={s.price}>{money(e.priceUSD)}</Text>
+          </View>
+          <Text style={s.plan}>{gbText(e)} · {e.days} days</Text>
+          <Text style={s.plan}>{netText(e)}</Text>
+          <Text style={s.note}>Install before you land. A reseller eSIM, not a local network. Advertised price via {via}, checked {e.asOf}. Confirm at checkout.</Text>
+        </View>
+      </View>
+      {more.length > 0 ? (
+        <View>
+          <Text style={s.sectionLabel}>More eSIM options</Text>
+          {more.map((p) => (
+            <View key={`${p.provider}|${p.plan || ''}|${p.days}|${p.priceUSD}`} style={s.row}>
+              <View style={s.rowLine}>
+                <Text style={s.rowMain}>{p.provider}</Text>
+                <Text style={s.rowPrice}>{money(p.priceUSD)}</Text>
+              </View>
+              <Text style={s.rowSub}>{gbText(p)} · {p.days} days · {netText(p)}</Text>
+            </View>
+          ))}
+        </View>
+      ) : null}
+    </View>
+  );
+}
+
+function Roaming({ s, t, home, info }) {
   return (
     <View style={s.outlineCard}>
       <View style={s.iconBox}><SignalGlyph color={t.accent} /></View>
       <View style={s.cardBody}>
-        <Text style={s.label}>Roaming on {carrier.name}</Text>
-        <Text style={s.net}>{title}</Text>
-        <Text style={s.plan}>{detail}</Text>
-        {verdict ? <Text style={s.note}>{verdict}</Text> : null}
-        {rule && rule.asOf ? <Text style={s.note}>Checked {rule.asOf}. Confirm with your carrier.</Text> : null}
+        <Text style={s.label}>Your carrier abroad: {home}</Text>
+        {info ? (
+          <>
+            <Text style={s.net}>{info.headline}</Text>
+            <Text style={s.plan}>{info.detail}</Text>
+            <Text style={s.plan}>{info.pass}</Text>
+            {info.caution ? <Text style={s.note}>{info.caution}</Text> : null}
+            <Text style={s.note}>Checked {info.asOf}.</Text>
+          </>
+        ) : (
+          <Text style={s.note}>No roaming details for this country yet. A travel eSIM is a safe choice.</Text>
+        )}
       </View>
     </View>
   );
@@ -121,70 +132,87 @@ function Main() {
   const t = THEMES[scheme === 'dark' ? 'dark' : 'light'];
   const s = useMemo(() => makeStyles(t), [t]);
 
+  const [data, setData] = useState(bundled);
   const [esims, setEsims] = useState(bundledEsims);
   const [roaming, setRoaming] = useState(bundledRoaming);
+  const [city, setCity] = useState('');
   const [country, setCountry] = useState('');
-  const [days, setDays] = useState(7);
-  const [group, setGroup] = useState('');
-  const [carrierId, setCarrierId] = useState('');
+  const [home, setHome] = useState('');
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
 
   useEffect(() => {
     (async () => {
       try {
-        const ce = await AsyncStorage.getItem('cf2-esims');
-        const e1 = ce && cleanEsims(JSON.parse(ce)); if (e1) setEsims(e1);
-        const cr = await AsyncStorage.getItem('cf2-roaming');
-        const r1 = cr && cleanRoaming(JSON.parse(cr)); if (r1) setRoaming(r1);
-        const re = await fetch(ESIM_URL); const fe = cleanEsims(await re.json());
-        if (fe) { setEsims(fe); await AsyncStorage.setItem('cf2-esims', JSON.stringify(fe)); }
-        const rr = await fetch(ROAM_URL); const fr = cleanRoaming(await rr.json());
-        if (fr) { setRoaming(fr); await AsyncStorage.setItem('cf2-roaming', JSON.stringify(fr)); }
+        const cached = await AsyncStorage.getItem('cf-data');
+        if (cached) setData(JSON.parse(cached));
+        const cachedE = await AsyncStorage.getItem('cf-esims');
+        if (cachedE) setEsims(JSON.parse(cachedE));
+        if (DATA_URL) {
+          const res = await fetch(DATA_URL);
+          const fresh = await res.json();
+          setData(fresh);
+          await AsyncStorage.setItem('cf-data', JSON.stringify(fresh));
+        }
+        const cachedR = await AsyncStorage.getItem('cf-roaming');
+        if (cachedR) setRoaming(JSON.parse(cachedR));
+        if (ROAMING_URL) {
+          const resR = await fetch(ROAMING_URL);
+          const freshR = await resR.json();
+          setRoaming(freshR);
+          await AsyncStorage.setItem('cf-roaming', JSON.stringify(freshR));
+        }
+        if (ESIM_URL) {
+          const resE = await fetch(ESIM_URL);
+          const freshE = await resE.json();
+          setEsims(freshE);
+          await AsyncStorage.setItem('cf-esims', JSON.stringify(freshE));
+        }
       } catch (e) { /* keep bundled or cached data */ }
     })();
   }, []);
 
-  const names = useMemo(() => Object.keys(esims?.countries || {}), [esims]);
-  const carriers = roaming?.carriers || [];
-  const groups = useMemo(() => [...new Set(carriers.map((c) => c.group))], [carriers]);
-  const members = carriers.filter((c) => c.group === group);
-  const carrier = carriers.find((c) => c.id === carrierId) || null;
+  const esimMap = useMemo(() => {
+    const m = {};
+    Object.entries(esims?.countries || {}).forEach(([c, v]) => { m[normCountry(c)] = { country: c, ...v }; });
+    return m;
+  }, [esims]);
 
-  const typed = normCountry(country);
-  const matches = names.filter((n) => normCountry(n).includes(typed));
+  const suggestions = useMemo(() => {
+    const dests = data.destinations.map((d) => ({ city: d.city, country: d.country, sub: d.country }));
+    const have = new Set(data.destinations.map((d) => normCountry(d.country)));
+    const extra = Object.values(esimMap)
+      .filter((e) => !have.has(normCountry(e.country)))
+      .map((e) => ({ city: '', country: e.country, sub: 'Travel eSIM only' }));
+    return [...dests, ...extra];
+  }, [data, esimMap]);
 
-  const run = (name, d = days, cid = carrierId) => {
-    const c = esims.countries[name];
-    if (!c) { setResult(null); setError('No data for that country yet. Pick one from the list.'); return; }
+  const search = (cityArg, countryArg) => {
+    const c = cityArg !== undefined ? cityArg : city;
+    const co = countryArg !== undefined ? countryArg : country;
+    if (!co.trim()) { setResult(null); setError('Enter a country.'); return; }
+    const match = data.destinations.find((d) => norm(d.city) === norm(c) && normCountry(d.country) === normCountry(co));
+    const esim = esimMap[normCountry(co)] || null;
+    if (!match && !esim) {
+      setResult(null);
+      setError('No data for that city and country yet. Check the spelling or try a listed destination.');
+      return;
+    }
     setError('');
-    const car = carriers.find((x) => x.id === cid) || null;
-    const rules = (roaming.rules && car && roaming.rules[car.id]) || null;
-    const rule = rules ? rules[name] || rules['*'] || null : null;
-    setResult({ name, c, car, rule, d });
+    if (!match) {
+      setResult({ dest: { city: c.trim(), country: esim.country }, esim, noNetworks: true });
+      return;
+    }
+    setResult({ dest: match, esim, ...rank(match.networks, match.coverageAvailable !== false) });
   };
-  const pick = (name) => { setCountry(name); run(name); };
-  const submit = () => {
-    const exact = names.find((n) => normCountry(n) === typed);
-    if (exact) return run(exact);
-    if (typed && matches.length === 1) { setCountry(matches[0]); return run(matches[0]); }
-    setResult(null);
-    setError(typed ? 'No data for that country yet. Pick one from the list.' : 'Enter a country.');
-  };
-  const chooseDays = (d) => { setDays(d); if (result) run(result.name, d); };
-  const chooseGroup = (g) => {
-    const next = group === g ? '' : g;
-    setGroup(next);
-    // Choosing a parent brand also picks its main brand (the member with the same name, or the only member).
-    const mem = carriers.filter((c) => c.group === next);
-    const main = next ? (mem.find((m) => m.name === next) || (mem.length === 1 ? mem[0] : null)) : null;
-    const id = main ? main.id : '';
-    setCarrierId(id);
-    if (result) run(result.name, days, id);
-  };
-  const chooseCarrier = (id) => { const next = carrierId === id ? '' : id; setCarrierId(next); if (result) run(result.name, days, next); };
 
-  const opts = result ? options(result.c) : [];
+  const pick = (x) => { setCity(x.city); setCountry(x.country); search(x.city, x.country); };
+  const carriers = roaming?.carriers || data.homeCarriers || [];
+  const roamInfo = (country) => {
+    const hit = Object.entries(roaming?.countries || {}).find(([c]) => normCountry(c) === normCountry(country));
+    return hit ? hit[1][home] || null : null;
+  };
+
   return (
     <View style={s.root}>
       <StatusBar style={t.statusBar} />
@@ -192,65 +220,64 @@ function Main() {
         <SafeAreaView>
           <View style={s.header}>
             <Text style={s.title} accessibilityRole="header">Cell Finder</Text>
-            <Text style={s.tagline}>Find the best eSIM before you fly.</Text>
+            <Text style={s.tagline}>Pick the right SIM before you land.</Text>
           </View>
         </SafeAreaView>
       </View>
       <ScrollView contentContainerStyle={s.body} keyboardShouldPersistTaps="handled">
-        <TextInput style={s.input} placeholder="Where are you going?" placeholderTextColor={t.muted} accessibilityLabel="Country" value={country} onChangeText={setCountry} onSubmitEditing={submit} />
+        <TextInput style={s.input} placeholder="City" placeholderTextColor={t.muted} accessibilityLabel="City" value={city} onChangeText={setCity} />
+        <TextInput style={s.input} placeholder="Country" placeholderTextColor={t.muted} accessibilityLabel="Country" value={country} onChangeText={setCountry} onSubmitEditing={() => search()} />
 
-        <Text style={s.fieldLabel}>Trip length</Text>
-        <View style={s.chipRow}>
-          {TRIPS.map((d) => (
-            <TouchableOpacity key={d} style={[s.chip, days === d && s.chipOn]} onPress={() => chooseDays(d)} accessibilityRole="button" accessibilityState={{ selected: days === d }}>
-              <Text style={[s.chipText, days === d && s.chipTextOn]}>{d} days</Text>
-            </TouchableOpacity>
-          ))}
-        </View>
-
-        {groups.length > 0 && (
+        {carriers.length > 0 && (
           <View>
-            <Text style={s.fieldLabel}>Your home carrier (optional)</Text>
+            <Text style={s.fieldLabel}>Your home carrier</Text>
             <View style={s.chipRow}>
-              {groups.map((g) => (
-                <TouchableOpacity key={g} style={[s.chip, group === g && s.chipOn]} onPress={() => chooseGroup(g)} accessibilityRole="button" accessibilityState={{ selected: group === g }}>
-                  <Text style={[s.chipText, group === g && s.chipTextOn]}>{g}</Text>
+              {carriers.map((h) => (
+                <TouchableOpacity key={h} style={[s.chip, home === h && s.chipOn]} onPress={() => setHome(home === h ? '' : h)} accessibilityRole="button" accessibilityState={{ selected: home === h }}>
+                  <Text style={[s.chipText, home === h && s.chipTextOn]}>{h}</Text>
                 </TouchableOpacity>
               ))}
             </View>
-            {members.length > 0 && (
-              <View style={s.chipRow}>
-                {members.map((m) => (
-                  <TouchableOpacity key={m.id} style={[s.chip, carrierId === m.id && s.chipOn]} onPress={() => chooseCarrier(m.id)} accessibilityRole="button" accessibilityState={{ selected: carrierId === m.id }}>
-                    <Text style={[s.chipText, carrierId === m.id && s.chipTextOn]}>{m.name}</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-            )}
           </View>
         )}
 
-        <TouchableOpacity style={s.button} onPress={submit} accessibilityRole="button">
-          <Text style={s.buttonText}>Compare</Text>
+        <TouchableOpacity style={s.button} onPress={() => search()} accessibilityRole="button">
+          <Text style={s.buttonText}>Find networks</Text>
         </TouchableOpacity>
 
         {!!error && <Text style={s.error}>{error}</Text>}
 
         {result ? (
           <View>
-            <Text style={s.dest} accessibilityRole="header">{result.name}</Text>
-            <Text style={s.intro}>Best travel eSIMs, bought before you leave.</Text>
-            {opts.map((o) => <EsimCard key={o.key} s={s} o={o} />)}
-            {result.car ? <Roaming s={s} t={t} carrier={result.car} rule={result.rule} days={result.d} cheapest={result.c.cheapest} /> : null}
-            <Text style={s.foot}>Advertised prices via {esims.via || 'a comparison site'}, checked {result.c.asOf}. These are reseller eSIMs, not local networks. Check the plan's network, hotspot rules and taxes at checkout.</Text>
+            <Text style={s.dest} accessibilityRole="header">{result.dest.city ? `${result.dest.city}, ` : ''}{result.dest.country}</Text>
+            {result.esim ? <EsimCard s={s} t={t} e={result.esim} via={esims.via || 'a comparison site'} /> : null}
+            {result.esim ? (
+              <Text style={[s.intro, { marginTop: 12 }]}>Best-coverage and best-value eSIM picks are coming soon. Until then, compare the network each plan uses.</Text>
+            ) : null}
+            {home ? <Roaming s={s} t={t} home={home} info={roamInfo(result.dest.country)} /> : null}
+            {!result.noNetworks ? (
+              <View>
+                <Text style={s.sectionLabel}>Local SIM (buy on arrival)</Text>
+                <Card s={s} label="Cheapest" tag="A" n={result.cheapest} />
+                {result.coverageMissing ? (
+                  <Text style={s.intro}>Coverage ratings for local networks here are coming soon, so only the cheapest is shown.</Text>
+                ) : (
+                  <View>
+                    <Card s={s} label="Best coverage" tag="B" n={result.coverage} />
+                    <Card s={s} label="Best overall value" tag="C" n={result.balanced} />
+                  </View>
+                )}
+                <Text style={s.foot}>Network data: {data.updated}. Prices in USD for the entry tourist plan; verify with the carrier before buying.</Text>
+              </View>
+            ) : null}
           </View>
         ) : (
           <View>
-            <Text style={s.sectionLabel}>{typed ? 'Matching destinations' : 'Try a destination'}</Text>
-            {matches.map((n) => (
-              <TouchableOpacity key={n} style={s.row} onPress={() => pick(n)} accessibilityRole="button">
-                <Text style={s.rowMain}>{n}</Text>
-                <Text style={s.rowSub}>From {money(esims.countries[n].cheapest.priceUSD)}</Text>
+            <Text style={s.sectionLabel}>Try a destination</Text>
+            {suggestions.map((x) => (
+              <TouchableOpacity key={`${x.city}|${x.country}`} style={s.row} onPress={() => pick(x)} accessibilityRole="button">
+                <Text style={s.rowMain}>{x.city || x.country}</Text>
+                <Text style={s.rowSub}>{x.sub}</Text>
               </TouchableOpacity>
             ))}
           </View>
