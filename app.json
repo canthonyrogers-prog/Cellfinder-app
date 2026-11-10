@@ -13,7 +13,8 @@
       "package": "com.example.cellfinder"
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      "expo-status-bar"
     ]
   }
 }
