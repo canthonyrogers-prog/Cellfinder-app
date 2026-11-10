@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { SafeAreaView, View, Text, TextInput, TouchableOpacity, ScrollView, useColorScheme } from 'react-native';
+import { SafeAreaView, View, Text, TextInput, TouchableOpacity, ScrollView, useColorScheme, BackHandler } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFonts, Barlow_400Regular, Barlow_500Medium, Barlow_600SemiBold } from '@expo-google-fonts/barlow';
@@ -206,6 +206,25 @@ function Main() {
     setResult({ dest: match, esim, ...rank(match.networks, match.coverageAvailable !== false) });
   };
 
+  const goBack = () => { setResult(null); setError(''); setCity(''); setCountry(''); };
+
+  // Android phone back button returns to the destination list instead of closing the app.
+  useEffect(() => {
+    if (!result) return undefined;
+    const sub = BackHandler.addEventListener('hardwareBackPress', () => { goBack(); return true; });
+    return () => sub.remove();
+  }, [result]);
+
+  const POPULAR = [
+    { flag: '\u{1F1F2}\u{1F1FD}', country: 'Mexico', grow: 1 },
+    { flag: '\u{1F1E8}\u{1F1F7}', country: 'Costa Rica', grow: 1 },
+    { flag: '\u{1F1E9}\u{1F1F4}', country: 'Dominican Republic', grow: 1.5 },
+  ];
+  const pickCountry = (country) => {
+    const d = data.destinations.find((x) => normCountry(x.country) === normCountry(country));
+    pick({ city: d ? d.city : '', country });
+  };
+
   const pick = (x) => { setCity(x.city); setCountry(x.country); search(x.city, x.country); };
   const carriers = roaming?.carriers || data.homeCarriers || [];
   const roamInfo = (country) => {
@@ -228,6 +247,20 @@ function Main() {
         <TextInput style={s.input} placeholder="City" placeholderTextColor={t.muted} accessibilityLabel="City" value={city} onChangeText={setCity} />
         <TextInput style={s.input} placeholder="Country" placeholderTextColor={t.muted} accessibilityLabel="Country" value={country} onChangeText={setCountry} onSubmitEditing={() => search()} />
 
+        {!result && (
+          <View style={s.popWrap}>
+            <Text style={s.fieldLabel}>Popular destinations</Text>
+            <View style={s.popRow}>
+              {POPULAR.map((p, i) => (
+                <TouchableOpacity key={p.country} style={[s.popTile, { flexGrow: p.grow }, i < POPULAR.length - 1 && s.popGap]} onPress={() => pickCountry(p.country)} accessibilityRole="button" accessibilityLabel={p.country}>
+                  <Text style={s.popFlag}>{p.flag}</Text>
+                  <Text style={s.popName} numberOfLines={2}>{p.country}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+        )}
+
         {carriers.length > 0 && (
           <View>
             <Text style={s.fieldLabel}>Your home carrier</Text>
@@ -249,6 +282,9 @@ function Main() {
 
         {result ? (
           <View>
+            <TouchableOpacity style={s.back} onPress={goBack} accessibilityRole="button" accessibilityLabel="Back to all destinations">
+              <Text style={s.backText}>{'\u2039'} Back</Text>
+            </TouchableOpacity>
             <Text style={s.dest} accessibilityRole="header">{result.dest.city ? `${result.dest.city}, ` : ''}{result.dest.country}</Text>
             {result.esim ? <EsimCard s={s} t={t} e={result.esim} via={esims.via || 'a comparison site'} /> : null}
             {result.esim ? (
