@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-11-01",
  "note": "Researched values. Each network lists its source and date under \"sources\".",
  "destinations": [
   {
@@ -15,7 +15,7 @@
        "asOf": "2026-10-05"
       }
      },
-     "priceUSD": 5.32
+     "priceUSD": 5.25
     },
     {
      "name": "Altice",
@@ -26,7 +26,7 @@
        "asOf": "2026-10-05"
       }
      },
-     "priceUSD": 9.14
+     "priceUSD": 9.02
     },
     {
      "name": "Viva",
@@ -37,7 +37,7 @@
        "asOf": "2026-10-03"
       }
      },
-     "priceUSD": 3.41
+     "priceUSD": 3.36
     }
    ],
    "coverageAvailable": false
