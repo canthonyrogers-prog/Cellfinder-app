@@ -1,309 +1,3050 @@
 {
- "updated": "2026-11-01",
- "via": "eSIMDB",
- "viaUrl": "https://esimdb.com",
- "note": "Advertised travel-eSIM prices; reseller eSIMs, not networks. Verify at checkout.",
+ "updated": "2026-11-18",
+ "via": "each seller's own website",
+ "viaUrl": "",
+ "note": "Advertised prices read from each seller's own site; reseller eSIMs, not networks. Verify at checkout.",
  "countries": {
-  "Dominican Republic": {
-   "provider": "Sim Local",
-   "days": 30,
-   "priceUSD": 17,
-   "asOf": "2026-10-03",
-   "gb": 10,
+  "Mexico": {
+   "provider": "Nomad",
+   "days": 3,
+   "priceUSD": 10,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://www.nomadesim.com/mexico-eSIM",
    "plans": [
     {
-     "provider": "Sim Local",
-     "days": 30,
-     "priceUSD": 17,
-     "asOf": "2026-10-03",
-     "gb": 10
-    },
-    {
-     "provider": "Ubigi",
-     "days": 7,
-     "priceUSD": 18,
-     "asOf": "2026-10-03",
-     "gb": 10
-    },
-    {
-     "provider": "EtravelSIM",
-     "days": 30,
-     "priceUSD": 26.99,
-     "asOf": "2026-10-03",
-     "gb": 20
-    },
-    {
-     "provider": "Orange Travel",
-     "days": 30,
-     "priceUSD": 35.99,
-     "asOf": "2026-10-03",
-     "gb": 15
-    }
-   ]
-  },
-  "Jamaica": {
-   "provider": "GlobaleSIM",
-   "days": 30,
-   "priceUSD": 32,
-   "asOf": "2026-10-03",
-   "gb": 10,
-   "plans": [
-    {
-     "provider": "GlobaleSIM",
-     "days": 30,
-     "priceUSD": 32,
-     "asOf": "2026-10-03",
-     "gb": 10
+     "provider": "Nomad",
+     "days": 3,
+     "priceUSD": 10,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/mexico-eSIM"
     },
     {
      "provider": "Airalo",
-     "days": 15,
-     "priceUSD": 33.5,
-     "asOf": "2026-10-03",
-     "gb": 10
-    }
-   ]
-  },
-  "Trinidad & Tobago": {
-   "provider": "Ubigi",
-   "days": 7,
-   "priceUSD": 28,
-   "asOf": "2026-10-03",
-   "gb": 10,
-   "plans": [
-    {
-     "provider": "Ubigi",
-     "days": 7,
-     "priceUSD": 28,
-     "asOf": "2026-10-03",
-     "gb": 10
+     "days": 3,
+     "priceUSD": 10.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "AT&T Mexico",
+     "url": "https://www.airalo.com/mexico-esim"
     },
     {
-     "provider": "GlobaleSIM",
-     "days": 30,
-     "priceUSD": 36,
-     "asOf": "2026-10-03",
-     "gb": 10
-    }
-   ]
-  },
-  "Guyana": {
-   "provider": "GlobaleSIM",
-   "days": 30,
-   "priceUSD": 26.4,
-   "asOf": "2026-10-03",
-   "gb": 10,
-   "plans": [
-    {
-     "provider": "GlobaleSIM",
-     "days": 30,
-     "priceUSD": 26.4,
-     "asOf": "2026-10-03",
-     "gb": 10
-    },
-    {
-     "provider": "Nomad",
-     "days": 30,
-     "priceUSD": 35,
-     "asOf": "2026-10-03",
-     "gb": 10
-    },
-    {
-     "provider": "Nomad",
-     "days": 30,
-     "priceUSD": 45,
-     "asOf": "2026-10-03",
-     "gb": 20
-    }
-   ]
-  },
-  "Barbados": {
-   "provider": "GlobaleSIM",
-   "days": 30,
-   "priceUSD": 20.8,
-   "asOf": "2026-10-03",
-   "gb": 10,
-   "plans": [
-    {
-     "provider": "GlobaleSIM",
-     "days": 30,
-     "priceUSD": 20.8,
-     "asOf": "2026-10-03",
-     "gb": 10
-    },
-    {
-     "provider": "Nomad",
-     "days": 30,
-     "priceUSD": 32,
-     "asOf": "2026-10-03",
-     "gb": 10
-    }
-   ]
-  },
-  "Bahamas": {
-   "provider": "Ubigi",
-   "days": 7,
-   "priceUSD": 28,
-   "asOf": "2026-10-03",
-   "gb": 10,
-   "plans": [
-    {
-     "provider": "Ubigi",
-     "days": 7,
-     "priceUSD": 28,
-     "asOf": "2026-10-03",
-     "gb": 10
-    }
-   ]
-  },
-  "Colombia": {
-   "provider": "GoMoWorld",
-   "days": 30,
-   "priceUSD": 12.99,
-   "asOf": "2026-10-03",
-   "gb": 15,
-   "plans": [
-    {
-     "provider": "GoMoWorld",
-     "days": 30,
-     "priceUSD": 12.99,
-     "asOf": "2026-10-03",
-     "gb": 15
-    },
-    {
-     "provider": "EtravelSIM",
-     "days": 30,
-     "priceUSD": 27,
-     "asOf": "2026-10-03",
-     "gb": 20
-    }
-   ]
-  },
-  "Costa Rica": {
-   "provider": "Breeze",
-   "days": 30,
-   "priceUSD": 15.99,
-   "asOf": "2026-10-03",
-   "gb": 10,
-   "plans": [
-    {
-     "provider": "Breeze",
-     "days": 30,
-     "priceUSD": 15.99,
-     "asOf": "2026-10-03",
-     "gb": 10
-    },
-    {
-     "provider": "EtravelSIM",
-     "days": 30,
-     "priceUSD": 27,
-     "asOf": "2026-10-03",
-     "gb": 20
-    },
-    {
-     "provider": "Orange Travel",
-     "days": 30,
-     "priceUSD": 35.99,
-     "asOf": "2026-10-03",
-     "gb": 20
-    }
-   ]
-  },
-  "Panama": {
-   "provider": "GoMoWorld",
-   "days": 30,
-   "priceUSD": 12.99,
-   "asOf": "2026-10-03",
-   "gb": 15,
-   "plans": [
-    {
-     "provider": "GoMoWorld",
-     "days": 30,
-     "priceUSD": 12.99,
-     "asOf": "2026-10-03",
-     "gb": 15
-    },
-    {
-     "provider": "Ubigi",
-     "days": 7,
-     "priceUSD": 19,
-     "asOf": "2026-10-03",
-     "gb": 10
-    },
-    {
-     "provider": "Nomad",
-     "days": 30,
-     "priceUSD": 27,
-     "asOf": "2026-10-03",
-     "gb": 20
-    }
-   ]
-  },
-  "Mexico": {
-   "provider": "Breeze",
-   "days": 30,
-   "priceUSD": 14.99,
-   "asOf": "2026-10-23",
-   "gb": 10,
-   "plan": "10 GB",
-   "source": "https://esimdb.com/mexico",
-   "plans": [
-    {
-     "provider": "Breeze",
-     "days": 30,
-     "priceUSD": 14.99,
-     "asOf": "2026-10-23",
-     "gb": 10,
-     "plan": "10 GB",
-     "source": "https://esimdb.com/mexico"
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 11.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-mexico/"
     },
     {
      "provider": "Nomad",
      "days": 30,
      "priceUSD": 15.5,
-     "asOf": "2026-10-23",
+     "asOf": "2026-11-17",
      "gb": 10,
-     "plan": "Fixed 10 GB",
-     "network": "AT&T / Movistar",
-     "source": "https://www.nomadesim.com/mexico-esim/"
+     "url": "https://www.nomadesim.com/mexico-eSIM"
     },
     {
-     "provider": "Maya Mobile",
-     "days": 7,
-     "priceUSD": 19.99,
-     "asOf": "2026-10-23",
+     "provider": "Nomad",
+     "days": 5,
+     "priceUSD": 17,
+     "asOf": "2026-11-17",
      "unlimited": true,
-     "plan": "City break, unlimited",
-     "source": "https://maya.net/esim/mexico"
+     "url": "https://www.nomadesim.com/mexico-eSIM"
     },
     {
-     "provider": "Ubigi",
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 17.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "AT&T Mexico",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 18.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-mexico/"
+    },
+    {
+     "provider": "Nomad",
      "days": 7,
      "priceUSD": 22,
-     "asOf": "2026-10-23",
-     "gb": 10,
-     "plan": "Mexico 10 GB",
-     "network": "Altan, Movistar or Telcel",
-     "source": "https://cellulardata.ubigi.com/rates-and-coverage/mexico-data-plans/mexico-10gb-7-days/"
-    },
-    {
-     "provider": "Orange Travel",
-     "days": 30,
-     "priceUSD": 22.99,
-     "asOf": "2026-10-23",
-     "gb": 20,
-     "plan": "20 GB",
-     "source": "https://esimdb.com/mexico"
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/mexico-eSIM"
     },
     {
      "provider": "Airalo",
      "days": 7,
      "priceUSD": 23.5,
-     "asOf": "2026-10-23",
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "AT&T Mexico",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 23.5,
+     "asOf": "2026-11-17",
      "gb": 10,
-     "plan": "10 GB",
      "network": "Movistar",
-     "source": "https://www.airalo.com/mexico-esim"
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 23.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-mexico/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 24.5,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 24.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-mexico/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 26,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 27.5,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/mexico-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 10,
+     "priceUSD": 30,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/mexico-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 31.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "AT&T Mexico",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 32.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-mexico/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 37.99,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://saily.com/esim-mexico/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 40,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 42.5,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 43,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "AT&T Mexico",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 44.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-mexico/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 54,
+     "asOf": "2026-11-17",
+     "gb": 50,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 62,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "AT&T Mexico",
+     "url": "https://www.airalo.com/mexico-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 66.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-mexico/"
+    }
+   ]
+  },
+  "Dominican Republic": {
+   "provider": "Nomad",
+   "days": 3,
+   "priceUSD": 13,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://www.nomadesim.com/dominican-republic-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 3,
+     "priceUSD": 13,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/dominican-republic-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 18.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Altice",
+     "url": "https://www.airalo.com/dominican-republic-esim"
+    },
+    {
+     "provider": "Nomad",
+     "days": 5,
+     "priceUSD": 19,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/dominican-republic-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 19.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-dominican-republic/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 7,
+     "priceUSD": 27,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/dominican-republic-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 29,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Altice",
+     "url": "https://www.airalo.com/dominican-republic-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 30.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-dominican-republic/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 10,
+     "priceUSD": 35,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/dominican-republic-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 37,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Altice",
+     "url": "https://www.airalo.com/dominican-republic-esim"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 37.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-dominican-republic/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 39.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-dominican-republic/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 15,
+     "priceUSD": 41,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/dominican-republic-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 49,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Altice",
+     "url": "https://www.airalo.com/dominican-republic-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 50.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-dominican-republic/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 60,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Altice",
+     "url": "https://www.airalo.com/dominican-republic-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 63.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-dominican-republic/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 65,
+     "asOf": "2026-11-17",
+     "gb": 50,
+     "url": "https://www.nomadesim.com/dominican-republic-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 97,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Altice",
+     "url": "https://www.airalo.com/dominican-republic-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 101.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-dominican-republic/"
+    }
+   ]
+  },
+  "Costa Rica": {
+   "provider": "Airalo",
+   "days": 3,
+   "priceUSD": 19.5,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "network": "Liberty",
+   "url": "https://www.airalo.com/costa-rica-esim",
+   "plans": [
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 19.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Liberty",
+     "url": "https://www.airalo.com/costa-rica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 19.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-costa-rica/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 21,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/costa-rica-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 5,
+     "priceUSD": 21,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/costa-rica-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 26,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/costa-rica-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 28.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Liberty",
+     "url": "https://www.airalo.com/costa-rica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-costa-rica/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 10,
+     "priceUSD": 35,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/costa-rica-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 36.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Liberty",
+     "url": "https://www.airalo.com/costa-rica-esim"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 36.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-costa-rica/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 37.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-costa-rica/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 38,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Liberty",
+     "url": "https://www.airalo.com/costa-rica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 40.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-costa-rica/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 47.99,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://saily.com/esim-costa-rica/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 49,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Liberty",
+     "url": "https://www.airalo.com/costa-rica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 51.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-costa-rica/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 89,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Liberty",
+     "url": "https://www.airalo.com/costa-rica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 99.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-costa-rica/"
+    }
+   ]
+  },
+  "Jamaica": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 17,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/jamaica-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 17,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/jamaica-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 20.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Flow",
+     "url": "https://www.airalo.com/jamaica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-jamaica/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 28,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/jamaica-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 28.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-jamaica/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 29.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Flow",
+     "url": "https://www.airalo.com/jamaica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-jamaica/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 36.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Flow",
+     "url": "https://www.airalo.com/jamaica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-jamaica/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/jamaica-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 39.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-jamaica/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 41,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Flow",
+     "url": "https://www.airalo.com/jamaica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 43.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-jamaica/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 49,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Flow",
+     "url": "https://www.airalo.com/jamaica-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 68,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Flow",
+     "url": "https://www.airalo.com/jamaica-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 69.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-jamaica/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 116.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-jamaica/"
+    }
+   ]
+  },
+  "Bahamas": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 17,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/bahamas-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 17,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/bahamas-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bahamas/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 28,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/bahamas-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bahamas/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 29.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-bahamas/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bahamas/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/bahamas-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 43.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bahamas/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 69.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bahamas/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 116.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bahamas/"
+    }
+   ]
+  },
+  "Trinidad & Tobago": {
+   "provider": "Holafly",
+   "days": 3,
+   "priceUSD": 20.9,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://esim.holafly.com/esim-trinidad-and-tobago/",
+   "plans": [
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-trinidad-and-tobago/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 29,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/trinidad-and-tobago-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-trinidad-and-tobago/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-trinidad-and-tobago/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 43,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/trinidad-and-tobago-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 43.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-trinidad-and-tobago/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 69.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-trinidad-and-tobago/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 79,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/trinidad-and-tobago-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 116.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-trinidad-and-tobago/"
+    }
+   ]
+  },
+  "Barbados": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 19,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/barbados-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 19,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/barbados-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-barbados/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 29,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/barbados-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 29.5,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/barbados-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-barbados/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 29.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-barbados/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 30,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/barbados-esim"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 32,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/barbados-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-barbados/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 43.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-barbados/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 49,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/barbados-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 69.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-barbados/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 116.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-barbados/"
+    }
+   ]
+  },
+  "Cayman Islands": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 17,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/cayman-islands-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 17,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/cayman-islands-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-british-cayman-island/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 28,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/cayman-islands-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-british-cayman-island/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 29.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-cayman-islands/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-british-cayman-island/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/cayman-islands-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 43.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-british-cayman-island/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 69.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-british-cayman-island/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 116.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-british-cayman-island/"
+    }
+   ]
+  },
+  "Colombia": {
+   "provider": "Airalo",
+   "days": 3,
+   "priceUSD": 12.5,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://www.airalo.com/colombia-esim",
+   "plans": [
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 12.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.airalo.com/colombia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 13.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-colombia/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 15,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/en/colombia-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 19.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.airalo.com/colombia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-colombia/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 25,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/en/colombia-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 27.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.airalo.com/colombia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 28.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-colombia/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 34.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.airalo.com/colombia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 37.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-colombia/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/en/colombia-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 48.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.airalo.com/colombia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 51.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-colombia/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 92,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.airalo.com/colombia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 100.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-colombia/"
+    }
+   ]
+  },
+  "Chile": {
+   "provider": "Airalo",
+   "days": 3,
+   "priceUSD": 12.5,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "network": "Movistar",
+   "url": "https://www.airalo.com/chile-esim",
+   "plans": [
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 12.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/chile-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 13.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-chile/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 14,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/chile-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 17.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-chile/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 20.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/chile-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-chile/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 25,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/chile-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 5,
+     "priceUSD": 26,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/chile-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 27.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/chile-esim"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 27.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-chile/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 28.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-chile/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 35,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/chile-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 37.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-chile/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/chile-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 10,
+     "priceUSD": 45,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/chile-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 48.99,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://saily.com/esim-chile/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 50,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/chile-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 51.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-chile/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 92,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/chile-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 100.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-chile/"
+    }
+   ]
+  },
+  "Brazil": {
+   "provider": "Holafly",
+   "days": 3,
+   "priceUSD": 13.5,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://esim.holafly.com/esim-brazil/",
+   "plans": [
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 13.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-brazil/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 13.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-brazil/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-brazil/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 24.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-brazil/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 28.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-brazil/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 37.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-brazil/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 39.99,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://saily.com/esim-brazil/"
+    },
+    {
+     "provider": "Saily",
+     "days": 15,
+     "priceUSD": 48.99,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://saily.com/esim-brazil/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 51.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-brazil/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 100.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-brazil/"
+    }
+   ]
+  },
+  "Aruba": {
+   "provider": "Saily",
+   "days": 30,
+   "priceUSD": 22.99,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://saily.com/esim-aruba/",
+   "plans": [
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 22.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-aruba/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 23,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/aruba-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 24,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/aruba-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 25,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/aruba-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 26.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-aruba/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 37.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-aruba/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 37.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-aruba/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 38,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/aruba-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 38.5,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/aruba-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "network": "Digicel",
+     "url": "https://www.airalo.com/aruba-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 60.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-aruba/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 70.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-aruba/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 82.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-aruba/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 163.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-aruba/"
+    }
+   ]
+  },
+  "Belize": {
+   "provider": "Holafly",
+   "days": 3,
+   "priceUSD": 26.9,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://esim.holafly.com/esim-belize/",
+   "plans": [
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 26.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-belize/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 37.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-belize/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 46,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Speednet (SMART)",
+     "url": "https://www.airalo.com/belize-esim"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 47,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Speednet (SMART)",
+     "url": "https://www.airalo.com/belize-esim"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 48,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/belize-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 48,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "network": "Speednet (SMART)",
+     "url": "https://www.airalo.com/belize-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 60.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-belize/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 70.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-belize/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 82.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-belize/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 95,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/belize-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 163.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-belize/"
+    }
+   ]
+  },
+  "Guyana": {
+   "provider": "Airalo",
+   "days": 3,
+   "priceUSD": 25.5,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "network": "GTT",
+   "url": "https://www.airalo.com/guyana-esim",
+   "plans": [
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 25.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "GTT",
+     "url": "https://www.airalo.com/guyana-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 26.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guyana/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 27.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-guyana/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 36.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "GTT",
+     "url": "https://www.airalo.com/guyana-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 37.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guyana/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 45.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-guyana/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 59.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "GTT",
+     "url": "https://www.airalo.com/guyana-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 60.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guyana/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 68,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "GTT",
+     "url": "https://www.airalo.com/guyana-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 70.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guyana/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 82.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guyana/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 163.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guyana/"
+    }
+   ]
+  },
+  "El Salvador": {
+   "provider": "Holafly",
+   "days": 3,
+   "priceUSD": 19.9,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://esim.holafly.com/esim-el-salvador/",
+   "plans": [
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 19.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-el-salvador/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-el-salvador/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-el-salvador/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 40.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-el-salvador/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 54.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-el-salvador/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 108.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-el-salvador/"
+    }
+   ]
+  },
+  "Honduras": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 13,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/honduras-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 13,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/honduras-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 19.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-honduras/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 20,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/honduras-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 23.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-honduras/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 29,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/honduras-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-honduras/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-honduras/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 38.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-honduras/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 40.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-honduras/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 54.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-honduras/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 69,
+     "asOf": "2026-11-17",
+     "gb": 50,
+     "url": "https://www.nomadesim.com/honduras-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 108.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-honduras/"
+    }
+   ]
+  },
+  "Ecuador": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 16,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/ecuador-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 16,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/ecuador-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 19.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-ecuador/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 28,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/ecuador-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-ecuador/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-ecuador/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 40.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-ecuador/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 47,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/ecuador-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 54.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-ecuador/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 108.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-ecuador/"
+    }
+   ]
+  },
+  "Uruguay": {
+   "provider": "Holafly",
+   "days": 3,
+   "priceUSD": 19.9,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://esim.holafly.com/esim-uruguay/",
+   "plans": [
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 19.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-uruguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-uruguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-uruguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 40.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-uruguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 54.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-uruguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 108.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-uruguay/"
+    }
+   ]
+  },
+  "Guatemala": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 19,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/guatemala-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 19,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/guatemala-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 19.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Tigo",
+     "url": "https://www.airalo.com/guatemala-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guatemala/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 24.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-guatemala/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 29,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/guatemala-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 31,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Tigo",
+     "url": "https://www.airalo.com/guatemala-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 31.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guatemala/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/guatemala-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Tigo",
+     "url": "https://www.airalo.com/guatemala-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 40.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guatemala/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 46.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Tigo",
+     "url": "https://www.airalo.com/guatemala-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 47.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guatemala/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 63,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Tigo",
+     "url": "https://www.airalo.com/guatemala-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 64.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guatemala/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 99,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Tigo",
+     "url": "https://www.airalo.com/guatemala-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 115.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-guatemala/"
+    }
+   ]
+  },
+  "Bolivia": {
+   "provider": "Airalo",
+   "days": 3,
+   "priceUSD": 19.5,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "network": "Nuevatel",
+   "url": "https://www.airalo.com/bolivia-esim",
+   "plans": [
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 19.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Nuevatel",
+     "url": "https://www.airalo.com/bolivia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bolivia/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 30.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Nuevatel",
+     "url": "https://www.airalo.com/bolivia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 31.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bolivia/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Nuevatel",
+     "url": "https://www.airalo.com/bolivia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 40.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bolivia/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 46,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Nuevatel",
+     "url": "https://www.airalo.com/bolivia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 47.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bolivia/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 63,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Nuevatel",
+     "url": "https://www.airalo.com/bolivia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 64.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bolivia/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 99,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Nuevatel",
+     "url": "https://www.airalo.com/bolivia-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 115.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-bolivia/"
+    }
+   ]
+  },
+  "Paraguay": {
+   "provider": "Holafly",
+   "days": 3,
+   "priceUSD": 20.9,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://esim.holafly.com/esim-paraguay/",
+   "plans": [
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 20.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-paraguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 31.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-paraguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 40.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-paraguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 47.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-paraguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 64.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-paraguay/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 115.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-paraguay/"
+    }
+   ]
+  },
+  "Panama": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 14.5,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/panama-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 14.5,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/panama-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 16,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/panama-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 18.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "+Movil (C&W)",
+     "url": "https://www.airalo.com/panama-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 18.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-panama/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 23,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/panama-eSIM"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 27.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "+Movil (C&W)",
+     "url": "https://www.airalo.com/panama-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 28.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-panama/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 5,
+     "priceUSD": 29,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/panama-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 29.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-panama/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 33.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "+Movil (C&W)",
+     "url": "https://www.airalo.com/panama-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 35.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-panama/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "+Movil (C&W)",
+     "url": "https://www.airalo.com/panama-esim"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 39.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-panama/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 40.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-panama/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 15,
+     "priceUSD": 49,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "+Movil (C&W)",
+     "url": "https://www.airalo.com/panama-esim"
+    },
+    {
+     "provider": "Nomad",
+     "days": 10,
+     "priceUSD": 49,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://www.nomadesim.com/panama-eSIM"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 55.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-panama/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 30,
+     "priceUSD": 99,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "+Movil (C&W)",
+     "url": "https://www.airalo.com/panama-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 108.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-panama/"
+    }
+   ]
+  },
+  "Argentina": {
+   "provider": "Saily",
+   "days": 30,
+   "priceUSD": 16.99,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://saily.com/es/esim-argentina/",
+   "plans": [
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 16.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/es/esim-argentina/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 3,
+     "priceUSD": 19.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/argentina-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 19.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-argentina/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 5,
+     "priceUSD": 27.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/argentina-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 29.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-argentina/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 29.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/es/esim-argentina/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 7,
+     "priceUSD": 34.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/argentina-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 36.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-argentina/"
+    },
+    {
+     "provider": "Airalo",
+     "days": 10,
+     "priceUSD": 38.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "network": "Movistar",
+     "url": "https://www.airalo.com/argentina-esim"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 40.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-argentina/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 46.99,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://saily.com/es/esim-argentina/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 51.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-argentina/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 91.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-argentina/"
+    }
+   ]
+  },
+  "Peru": {
+   "provider": "Holafly",
+   "days": 3,
+   "priceUSD": 16.5,
+   "asOf": "2026-11-17",
+   "unlimited": true,
+   "url": "https://esim.holafly.com/esim-peru/",
+   "plans": [
+    {
+     "provider": "Holafly",
+     "days": 3,
+     "priceUSD": 16.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-peru/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 17.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-peru/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 5,
+     "priceUSD": 26.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-peru/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 29.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-peru/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 7,
+     "priceUSD": 33.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-peru/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 10,
+     "priceUSD": 36.5,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-peru/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 40.99,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://saily.com/esim-peru/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 15,
+     "priceUSD": 45.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-peru/"
+    },
+    {
+     "provider": "Holafly",
+     "days": 30,
+     "priceUSD": 81.9,
+     "asOf": "2026-11-17",
+     "unlimited": true,
+     "url": "https://esim.holafly.com/esim-peru/"
+    }
+   ]
+  },
+  "Curacao": {
+   "provider": "Saily",
+   "days": 30,
+   "priceUSD": 30.99,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://saily.com/esim-curacao/",
+   "plans": [
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 30.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-curacao/"
+    }
+   ]
+  },
+  "Grenada": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 17,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/grenada-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 17,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/grenada-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 22.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-grenada/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 28,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/grenada-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 37.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-grenada/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/grenada-eSIM"
+    }
+   ]
+  },
+  "Turks & Caicos": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 17,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/turks-and-caicos-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 17,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/turks-and-caicos-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 28,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/turks-and-caicos-eSIM"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 29.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-turks-and-caicos-islands/"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/turks-and-caicos-eSIM"
+    }
+   ]
+  },
+  "Haiti": {
+   "provider": "Saily",
+   "days": 30,
+   "priceUSD": 24.99,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://saily.com/esim-haiti/",
+   "plans": [
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 24.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-haiti/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 37.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-haiti/"
+    }
+   ]
+  },
+  "Nicaragua": {
+   "provider": "Saily",
+   "days": 30,
+   "priceUSD": 24.99,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://saily.com/esim-nicaragua/",
+   "plans": [
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 24.99,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://saily.com/esim-nicaragua/"
+    },
+    {
+     "provider": "Saily",
+     "days": 30,
+     "priceUSD": 32.99,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://saily.com/esim-nicaragua/"
+    }
+   ]
+  },
+  "Dominica": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 17,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/dominica-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 17,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/dominica-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 28,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/dominica-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/dominica-eSIM"
+    }
+   ]
+  },
+  "Saint Lucia": {
+   "provider": "Nomad",
+   "days": 30,
+   "priceUSD": 17,
+   "asOf": "2026-11-17",
+   "gb": 5,
+   "url": "https://www.nomadesim.com/en/saint-lucia-eSIM",
+   "plans": [
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 17,
+     "asOf": "2026-11-17",
+     "gb": 5,
+     "url": "https://www.nomadesim.com/en/saint-lucia-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 28,
+     "asOf": "2026-11-17",
+     "gb": 10,
+     "url": "https://www.nomadesim.com/en/saint-lucia-eSIM"
+    },
+    {
+     "provider": "Nomad",
+     "days": 30,
+     "priceUSD": 39,
+     "asOf": "2026-11-17",
+     "gb": 20,
+     "url": "https://www.nomadesim.com/en/saint-lucia-eSIM"
     }
    ]
   }

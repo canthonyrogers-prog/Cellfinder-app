@@ -1,7 +1,11 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-11-17",
   "note": "US carrier roaming for the destination, from each carrier's own pages. Plan rules vary: confirm your plan with your carrier.",
-  "carriers": ["T-Mobile", "Verizon", "AT&T"],
+  "carriers": [
+    "T-Mobile",
+    "Verizon",
+    "AT&T"
+  ],
   "countries": {
     "Mexico": {
       "T-Mobile": {
@@ -29,6 +33,846 @@
         "caution": "I could not confirm the Mexico rules for every AT&T plan. Check your plan with AT&T.",
         "url": "https://www.att.com/international/",
         "asOf": "2026-10-23"
+      }
+    },
+    "Argentina": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Belize": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Bolivia": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Brazil": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Chile": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Colombia": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Costa Rica": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Dominican Republic": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Ecuador": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "El Salvador": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Guatemala": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Guyana": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Honduras": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Nicaragua": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Panama": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Paraguay": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Peru": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Uruguay": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "Included on Premium 2.0 and Elite 2.0 plans",
+        "detail": "Unlimited talk, text and high-speed data here at no extra cost. Other eligible unlimited plans can add International Day Pass.",
+        "pass": "International Day Pass: $12/day, charged only on days you use it ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T says international use should not exceed your domestic use. Check your plan with AT&T.",
+        "url": "https://www.att.com/plans/unlimited-data-plans/roam-latin-america/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Jamaica": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Bahamas": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Trinidad & Tobago": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Barbados": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Cayman Islands": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Aruba": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Curacao": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans/results/curacao",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Grenada": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Turks & Caicos": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Dominica": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Saint Lucia": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
+      }
+    },
+    "Haiti": {
+      "T-Mobile": {
+        "headline": "Data included on most postpaid plans",
+        "detail": "Texts are unlimited. High-speed data is 5 to 30 GB depending on your plan, then slower 256 kbps speeds. Calls cost $0.50 a minute. Prepaid and Essentials plans need an International Pass for data.",
+        "pass": "International Pass: $50 for 10 days (15 GB) or $75 for 30 days (30 GB)",
+        "caution": "T-Mobile's pages disagree on some call rates and 1-day pass prices, so check your plan in the T-Life app.",
+        "url": "https://www.t-mobile.com/cell-phone-plans/international-roaming-plans",
+        "asOf": "2026-11-17"
+      },
+      "Verizon": {
+        "headline": "TravelPass: $12 a day",
+        "detail": "You pay only for days you use your phone. Your plan's talk, text and data work here, with your plan's speed limits.",
+        "pass": "$12/day per line",
+        "perDayUSD": 12,
+        "caution": "Check My Verizon for how your plan's data limits apply abroad.",
+        "url": "https://www.verizon.com/plans/travelpass-countries/",
+        "asOf": "2026-11-17"
+      },
+      "AT&T": {
+        "headline": "International Day Pass: $12 a day",
+        "detail": "Your domestic plan's talk, text and data work here. You pay the daily fee only on days you use the phone.",
+        "pass": "International Day Pass: $12/day ($6 for each extra line)",
+        "perDayUSD": 12,
+        "caution": "AT&T's free Latin America benefit does not cover the Caribbean. Confirm this country is on AT&T's day-pass destination list.",
+        "url": "https://www.att.com/international/day-pass/",
+        "asOf": "2026-11-17"
       }
     }
   }

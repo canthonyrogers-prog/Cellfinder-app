@@ -12,20 +12,16 @@ export const F = {
   head: 'BarlowSemiCondensed_700Bold',
 };
 
-export const THEMES = {
-  dark: {
-    bg: '#071B33', header: '#071B33', card: '#0E2D52', cardLine: 'transparent',
-    field: '#0E2D52', fieldLine: '#27527F', text: '#EAF2FC', strong: '#FFFFFF', muted: '#9FB6D0',
-    accent: '#6CB4FF', rule: '#1F4A7D', outline: '#27527F', chipLine: '#27527F', chipText: '#EAF2FC',
-    chipBg: 'transparent', error: '#FF8A80', statusBar: 'light',
-  },
-  light: {
-    bg: '#EEF3F9', header: NAVY, card: '#FFFFFF', cardLine: '#D5E0EE',
-    field: '#FFFFFF', fieldLine: '#C5D3E6', text: NAVY, strong: NAVY, muted: '#4B6180',
-    accent: '#0B5CAD', rule: '#D5E0EE', outline: '#9DB4D3', chipLine: '#0B5CAD', chipText: '#0B5CAD',
-    chipBg: '#FFFFFF', error: '#B42318', statusBar: 'light',
-  },
+// One look for both phone settings: magenta background, white text, sunrise glow at the top.
+export const MAGENTA = '#C2007A'; // white text on it passes the 4.5:1 contrast check (5.9:1)
+const MAGENTA_LOOK = {
+  bg: MAGENTA, header: 'transparent', card: 'rgba(52,0,36,0.40)', cardLine: 'rgba(255,255,255,0.28)',
+  field: 'rgba(52,0,36,0.42)', fieldLine: 'rgba(255,255,255,0.50)', text: '#FFFFFF', strong: '#FFFFFF',
+  muted: 'rgba(255,255,255,0.90)', accent: '#FFE08A', rule: 'rgba(255,255,255,0.30)',
+  outline: 'rgba(255,255,255,0.55)', chipLine: 'rgba(255,255,255,0.75)', chipText: '#FFFFFF',
+  chipBg: 'transparent', error: '#FFF3B0', statusBar: 'light', placeholder: 'rgba(255,255,255,0.78)',
 };
+export const THEMES = { dark: MAGENTA_LOOK, light: MAGENTA_LOOK };
 
 export const makeStyles = (t) =>
   StyleSheet.create({
@@ -33,16 +29,28 @@ export const makeStyles = (t) =>
     headerWrap: { backgroundColor: t.header },
     header: {
       alignItems: 'center',
-      paddingHorizontal: 20, paddingBottom: 24,
+      paddingHorizontal: 20, paddingBottom: 112,
       paddingTop: 12 + (Platform.OS === 'android' ? RNStatusBar.currentHeight || 0 : 0),
     },
     title: { textAlign: 'center', fontFamily: F.head, fontSize: 34, lineHeight: 38, color: '#FFFFFF' },
-    tagline: { textAlign: 'center', fontFamily: F.body, fontSize: 16, lineHeight: 22, color: YELLOW, marginTop: 4 },
+    tagline: { textAlign: 'center', fontFamily: F.body, fontSize: 16, lineHeight: 22, color: '#FFFFFF', marginTop: 4 },
     body: { padding: 20, paddingBottom: 56 },
     input: {
       height: 56, borderRadius: 12, borderWidth: 1.5, borderColor: t.fieldLine, backgroundColor: t.field,
       color: t.text, fontFamily: F.body, fontSize: 17, paddingHorizontal: 16, marginBottom: 12,
     },
+    select: {
+      height: 56, borderRadius: 12, borderWidth: 1.5, borderColor: t.fieldLine, backgroundColor: t.field,
+      paddingHorizontal: 16, marginBottom: 12, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    },
+    selectText: { fontFamily: F.body, fontSize: 17, color: t.text },
+    selectCaret: { fontSize: 13, color: t.text },
+    menu: { borderRadius: 12, borderWidth: 1.5, borderColor: t.fieldLine, backgroundColor: 'rgba(52,0,36,0.92)', marginTop: -6, marginBottom: 12, overflow: 'hidden' },
+    menuItem: { minHeight: 48, paddingHorizontal: 16, justifyContent: 'center' },
+    menuLine: { borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.25)' },
+    menuItemOn: { backgroundColor: YELLOW },
+    menuText: { fontFamily: F.body, fontSize: 17, color: t.text },
+    menuTextOn: { color: NAVY },
     fieldLabel: { fontFamily: F.label, fontSize: 15, lineHeight: 20, color: t.muted, marginBottom: 8 },
     chipRow: { flexDirection: 'row', flexWrap: 'wrap', marginBottom: 4 },
     chip: {
@@ -64,6 +72,14 @@ export const makeStyles = (t) =>
     popGap: { marginRight: 8 },
     popFlag: { fontSize: 20, marginRight: 6 },
     popName: { flex: 1, fontFamily: F.label, fontSize: 14, lineHeight: 16, color: t.strong },
+    sunrise: { position: 'absolute', top: 0, left: 0, right: 0, aspectRatio: 1170 / 960 },
+    linkBtn: {
+      alignSelf: 'flex-start', minHeight: 44, borderRadius: 22, backgroundColor: YELLOW, justifyContent: 'center',
+      paddingHorizontal: 18, marginTop: 12,
+    },
+    linkBtnText: { fontFamily: F.head, fontSize: 17, color: NAVY },
+    linkNote: { fontFamily: F.regular, fontSize: 12, lineHeight: 16, color: t.muted, marginTop: 6 },
+    rowLink: { fontFamily: F.label, fontSize: 14, lineHeight: 18, color: t.accent, marginTop: 2 },
     back: { alignSelf: 'flex-start', minHeight: 44, justifyContent: 'center', marginTop: 16, paddingRight: 16 },
     backText: { fontFamily: F.label, fontSize: 17, color: t.accent },
     dest: { fontFamily: F.head, fontSize: 25, lineHeight: 28, color: t.strong, marginTop: 4, marginBottom: 12 },
